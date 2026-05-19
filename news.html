@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>News — The Vista Chronicle</title>
+<link rel="stylesheet" href="shared.css"/>
+<style>
+.news-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;}
+.nc-title{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:#1e1b16;margin-bottom:8px;line-height:1.4;}
+.nc-body{font-size:13px;color:#6b6560;line-height:1.65;flex:1;}
+.nc-footer{display:flex;align-items:center;justify-content:space-between;margin-top:14px;padding-top:12px;border-top:1px solid #ede9e2;}
+.nc-date{font-size:11px;color:#c4bdb5;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Vista <em>International</em></a>
+  <ul class="nav-links">
+    <li><a class="nav-link" href="index.html">Home</a></li>
+    <li><a class="nav-link" href="students.html">Students</a></li>
+    <li><a class="nav-link" href="alumni.html">Alumni</a></li>
+    <li><a class="nav-link" href="news.html">News</a></li>
+    <li><a class="nav-link" href="events.html">Events</a></li>
+  </ul>
+  <span class="nav-issue">Issue 34 · May 2026</span>
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a class="nav-link" href="index.html">🏠 Home</a>
+  <a class="nav-link" href="students.html">🎓 Students</a>
+  <a class="nav-link" href="alumni.html">🌍 Alumni</a>
+  <a class="nav-link" href="news.html">📰 News</a>
+  <a class="nav-link" href="events.html">📅 Events</a>
+</div>
+
+<section class="hero page-hero">
+  <div class="hero-orb ho1"></div><div class="hero-orb ho2"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow"><div class="eyebrow-dot"></div>Week of May 19, 2026</div>
+    <h1 class="hero-title">Campus <em>News</em></h1>
+    <p class="hero-sub">Academics · Sports · Arts · Community</p>
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section class="section reveal">
+  <p class="sec-label">Top story</p>
+  <div style="background:linear-gradient(135deg,#eef2ff,#f5f3ff);border:1px solid #e0e7ff;border-left:5px solid #4338ca;border-radius:20px;padding:clamp(24px,4vw,40px);">
+    <span class="tag tag-indigo" style="margin-bottom:16px;">Academics</span>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(20px,4vw,32px);font-weight:800;color:#1e1b16;margin-bottom:16px;line-height:1.3;">Grade 9 Science Fair: Three Vista teams heading to State competition</h2>
+    <p style="font-size:14px;color:#6b6560;line-height:1.85;margin-bottom:14px;">This Thursday's Science Fair saw 42 projects from Grades 8 and 9 compete for top honours. Judges from BITS Pilani commented that several projects were at undergraduate level. Three teams have been selected to represent Vista at the Telangana State Science Exhibition in July.</p>
+    <p style="font-size:14px;color:#6b6560;line-height:1.85;margin-bottom:22px;">The winning project, by Sanya Nair (Grade 9), demonstrated a low-cost biochar water purification system. Second place went to a team developing an AI-powered early warning system for dengue outbreaks using satellite imagery.</p>
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+      <div class="avatar" style="width:36px;height:36px;font-size:12px;background:linear-gradient(135deg,#4338ca,#7c3aed);color:#fff;">PS</div>
+      <div><div style="font-size:13px;color:#1e1b16;font-weight:500;">Ms. Priya Sharma, Principal</div><div style="font-size:11px;color:#8a847d;">May 16, 2026</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS GRID -->
+<section class="section reveal" style="padding-top:0;">
+  <p class="sec-label">More stories</p>
+  <h2 class="sec-title">This week at Vista</h2>
+  <div class="news-grid">
+
+    <div class="card" style="border-top:3px solid #0d9488;display:flex;flex-direction:column;">
+      <span class="tag tag-teal" style="margin-bottom:12px;">Sports</span>
+      <div class="nc-title">6 medals at Hyderabad Inter-School Athletics</div>
+      <div class="nc-body">Aarav Reddy (Grade 11) won gold in the 400m. Vista ranked 2nd overall among 28 schools at Gachibowli Stadium.</div>
+      <div class="nc-footer">
+        <div style="display:flex;align-items:center;gap:8px;"><div class="avatar" style="width:24px;height:24px;font-size:9px;background:#f0fdfa;color:#0d9488;">RK</div><span style="font-size:11px;color:#8a847d;">Mr. Raj Kumar</span></div>
+        <span class="nc-date">May 17</span>
+      </div>
+    </div>
+
+    <div class="card" style="border-top:3px solid #d97706;display:flex;flex-direction:column;">
+      <span class="tag tag-amber" style="margin-bottom:12px;">Arts</span>
+      <div class="nc-title">Annual Art Exhibition — "Roots & Routes" opens May 30</div>
+      <div class="nc-body">Student artwork from Grades 1–12 in the Main Hall. Theme: identity, migration and belonging. Vernissage 5:00 PM.</div>
+      <div class="nc-footer">
+        <div style="display:flex;align-items:center;gap:8px;"><div class="avatar" style="width:24px;height:24px;font-size:9px;background:#fffbeb;color:#d97706;">SM</div><span style="font-size:11px;color:#8a847d;">Ms. Sara Mathur</span></div>
+        <span class="nc-date">May 18</span>
+      </div>
+    </div>
+
+    <div class="card" style="border-top:3px solid #7c3aed;display:flex;flex-direction:column;">
+      <span class="tag tag-violet" style="margin-bottom:12px;">Community</span>
+      <div class="nc-title">New Student Council elected for 2026–27</div>
+      <div class="nc-body">Krish Patel (Grade 12) elected Head Boy, Priya Kumar (Grade 11) Head Girl. Priorities: mental health, sustainability, inclusion.</div>
+      <div class="nc-footer">
+        <div style="display:flex;align-items:center;gap:8px;"><div class="avatar" style="width:24px;height:24px;font-size:9px;background:#f5f3ff;color:#7c3aed;">AO</div><span style="font-size:11px;color:#8a847d;">Admin Office</span></div>
+        <span class="nc-date">May 19</span>
+      </div>
+    </div>
+
+    <div class="card" style="border-top:3px solid #0284c7;display:flex;flex-direction:column;">
+      <span class="tag tag-sky" style="margin-bottom:12px;">Achievement</span>
+      <div class="nc-title">Riya Verma receives early admission to MIT</div>
+      <div class="nc-body">Grade 12 student admitted to MIT Computer Science. Also achieved a perfect IB score of 45/45 — first Vista student in 6 years.</div>
+      <div class="nc-footer">
+        <div style="display:flex;align-items:center;gap:8px;"><div class="avatar" style="width:24px;height:24px;font-size:9px;background:#f0f9ff;color:#0284c7;">PS</div><span style="font-size:11px;color:#8a847d;">Ms. Priya Sharma</span></div>
+        <span class="nc-date">May 15</span>
+      </div>
+    </div>
+
+    <div class="card" style="border-top:3px solid #e11d48;display:flex;flex-direction:column;">
+      <span class="tag tag-rose" style="margin-bottom:12px;">Welfare</span>
+      <div class="nc-title">New student counsellor joins Vista — Dr. Anita Rao</div>
+      <div class="nc-body">Dr. Anita Rao (M.Phil Clinical Psychology, NIMHANS) joins our team. Available Mon–Fri for student support sessions.</div>
+      <div class="nc-footer">
+        <div style="display:flex;align-items:center;gap:8px;"><div class="avatar" style="width:24px;height:24px;font-size:9px;background:#fff1f2;color:#e11d48;">HR</div><span style="font-size:11px;color:#8a847d;">HR Office</span></div>
+        <span class="nc-date">May 13</span>
+      </div>
+    </div>
+
+    <div class="card" style="border-top:3px solid #16a34a;display:flex;flex-direction:column;">
+      <span class="tag tag-green" style="margin-bottom:12px;">Technology</span>
+      <div class="nc-title">Vista launches AI literacy programme for Grades 6–12</div>
+      <div class="nc-body">Starting June, all middle and senior school students get structured training in responsible AI use, prompt literacy, and ethics.</div>
+      <div class="nc-footer">
+        <div style="display:flex;align-items:center;gap:8px;"><div class="avatar" style="width:24px;height:24px;font-size:9px;background:#f0fdf4;color:#16a34a;">IT</div><span style="font-size:11px;color:#8a847d;">IT Department</span></div>
+        <span class="nc-date">May 14</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-logo">Vista <em>International</em></div><div class="footer-desc">A premium IB, Cambridge & CBSE school in Gachibowli, Hyderabad. Nurturing global citizens since 2008.</div></div>
+    <div class="footer-col"><div class="footer-col-title">Navigate</div><a href="index.html">Home</a><a href="students.html">Students</a><a href="alumni.html">Alumni</a><a href="news.html">News</a><a href="events.html">Events</a></div>
+    <div class="footer-col"><div class="footer-col-title">School</div><a href="#">Admissions</a><a href="#">Parent Portal</a><a href="#">Curriculum</a></div>
+    <div class="footer-col"><div class="footer-col-title">Contact</div><a href="#">info@vista.edu.in</a><a href="#">+91 40 1234 5678</a><a href="#">Gachibowli, Hyderabad</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Vista International School, Hyderabad.</span><span>The Vista Chronicle · Issue 34</span></div>
+</footer>
+<script src="shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Alumni — The Vista Chronicle</title>
+<link rel="stylesheet" href="shared.css"/>
+<style>
+.alumni-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:20px;}
+.tl{display:flex;flex-direction:column;gap:0;}
+.tl-item{display:grid;grid-template-columns:72px 20px 1fr;gap:16px;align-items:flex-start;}
+.tl-year{font-family:'Playfair Display',serif;font-size:14px;font-weight:800;color:#d97706;text-align:right;padding-top:2px;}
+.tl-col{display:flex;flex-direction:column;align-items:center;}
+.tl-dot{width:12px;height:12px;border-radius:50%;background:#4338ca;flex-shrink:0;margin-top:4px;box-shadow:0 0 0 3px #eef2ff;}
+.tl-line{width:2px;flex:1;background:#e5e2db;margin-top:6px;min-height:40px;}
+.tl-item:last-child .tl-line{display:none;}
+.tl-content{padding-bottom:28px;}
+.tl-title{font-size:14px;font-weight:600;color:#1e1b16;margin-bottom:4px;}
+.tl-detail{font-size:13px;color:#8a847d;line-height:1.6;}
+@media(max-width:480px){.alumni-grid{grid-template-columns:1fr 1fr;}.flip-card{height:210px;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Vista <em>International</em></a>
+  <ul class="nav-links">
+    <li><a class="nav-link" href="index.html">Home</a></li>
+    <li><a class="nav-link" href="students.html">Students</a></li>
+    <li><a class="nav-link" href="alumni.html">Alumni</a></li>
+    <li><a class="nav-link" href="news.html">News</a></li>
+    <li><a class="nav-link" href="events.html">Events</a></li>
+  </ul>
+  <span class="nav-issue">Issue 34 · May 2026</span>
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a class="nav-link" href="index.html">🏠 Home</a>
+  <a class="nav-link" href="students.html">🎓 Students</a>
+  <a class="nav-link" href="alumni.html">🌍 Alumni</a>
+  <a class="nav-link" href="news.html">📰 News</a>
+  <a class="nav-link" href="events.html">📅 Events</a>
+</div>
+
+<section class="hero page-hero">
+  <div class="hero-orb ho1"></div><div class="hero-orb ho2"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow"><div class="eyebrow-dot"></div>2,400+ Alumni worldwide</div>
+    <h1 class="hero-title">The Vista <em>Alumni</em></h1>
+    <p class="hero-sub">Google · Oxford · AIIMS · MIT · Startups · and beyond</p>
+    <div class="hero-stats">
+      <div class="hstat"><div class="hstat-n">2,400+</div><div class="hstat-l">Alumni</div></div>
+      <div class="hstat"><div class="hstat-n">38</div><div class="hstat-l">Countries</div></div>
+      <div class="hstat"><div class="hstat-n">120+</div><div class="hstat-l">Companies</div></div>
+      <div class="hstat"><div class="hstat-n">14</div><div class="hstat-l">Batches</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FLIP CARDS -->
+<section class="section reveal">
+  <p class="sec-label">Where are they now</p>
+  <h2 class="sec-title">Alumni spotlight <small>— hover or tap to flip</small></h2>
+  <div class="alumni-grid">
+
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="avatar" style="width:76px;height:76px;font-size:24px;background:linear-gradient(135deg,#4338ca,#7c3aed);color:#fff;margin:0 auto 12px;">VK</div>
+          <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:800;color:#1e1b16;margin-bottom:3px;">Vikram Kapoor</div>
+          <div style="font-size:10px;color:#8a847d;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;">Batch of 2018</div>
+          <div style="font-size:12px;color:#4338ca;">Google · San Francisco</div>
+          <div class="flip-hint">hover / tap to flip ↻</div>
+        </div>
+        <div class="flip-back">
+          <div style="font-size:13px;font-weight:600;color:#fcd34d;margin-bottom:8px;">Senior Software Engineer</div>
+          <div class="flip-quote">"Vista's IB programme taught me how to think independently. That's what got me through Google interviews."</div>
+          <span class="badge" style="background:rgba(255,255,255,0.15);color:#fff;margin-top:8px;">IB Diploma · 43/45</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="avatar" style="width:76px;height:76px;font-size:24px;background:linear-gradient(135deg,#e11d48,#d97706);color:#fff;margin:0 auto 12px;">AP</div>
+          <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:800;color:#1e1b16;margin-bottom:3px;">Ananya Pillai</div>
+          <div style="font-size:10px;color:#8a847d;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;">Batch of 2020</div>
+          <div style="font-size:12px;color:#4338ca;">Oxford University · UK</div>
+          <div class="flip-hint">hover / tap to flip ↻</div>
+        </div>
+        <div class="flip-back">
+          <div style="font-size:13px;font-weight:600;color:#fcd34d;margin-bottom:8px;">PhD Candidate, Economics</div>
+          <div class="flip-quote">"The research skills from my Extended Essay directly shaped my Oxford application."</div>
+          <span class="badge" style="background:rgba(255,255,255,0.15);color:#fff;margin-top:8px;">IB Diploma · 44/45</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="avatar" style="width:76px;height:76px;font-size:24px;background:linear-gradient(135deg,#0d9488,#0284c7);color:#fff;margin:0 auto 12px;">SR</div>
+          <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:800;color:#1e1b16;margin-bottom:3px;">Siddharth Rao</div>
+          <div style="font-size:10px;color:#8a847d;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;">Batch of 2019</div>
+          <div style="font-size:12px;color:#4338ca;">Founder · EduLeap</div>
+          <div class="flip-hint">hover / tap to flip ↻</div>
+        </div>
+        <div class="flip-back">
+          <div style="font-size:13px;font-weight:600;color:#fcd34d;margin-bottom:8px;">CEO, EduLeap (Series A)</div>
+          <div class="flip-quote">"Vista gave me confidence to lead. My company now serves 50,000 students across India."</div>
+          <span class="badge" style="background:rgba(255,255,255,0.15);color:#fff;margin-top:8px;">Cambridge A* ×6</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="avatar" style="width:76px;height:76px;font-size:24px;background:linear-gradient(135deg,#d97706,#e11d48);color:#fff;margin:0 auto 12px;">NC</div>
+          <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:800;color:#1e1b16;margin-bottom:3px;">Neha Chandra</div>
+          <div style="font-size:10px;color:#8a847d;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;">Batch of 2021</div>
+          <div style="font-size:12px;color:#4338ca;">AIIMS Delhi</div>
+          <div class="flip-hint">hover / tap to flip ↻</div>
+        </div>
+        <div class="flip-back">
+          <div style="font-size:13px;font-weight:600;color:#fcd34d;margin-bottom:8px;">MBBS Final Year</div>
+          <div class="flip-quote">"My biology teachers made AIIMS feel reachable — and I reached it."</div>
+          <span class="badge" style="background:rgba(255,255,255,0.15);color:#fff;margin-top:8px;">CBSE · 98.4%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="avatar" style="width:76px;height:76px;font-size:24px;background:linear-gradient(135deg,#7c3aed,#4338ca);color:#fff;margin:0 auto 12px;">RG</div>
+          <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:800;color:#1e1b16;margin-bottom:3px;">Rahul Gupta</div>
+          <div style="font-size:10px;color:#8a847d;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;">Batch of 2017</div>
+          <div style="font-size:12px;color:#4338ca;">McKinsey · Mumbai</div>
+          <div class="flip-hint">hover / tap to flip ↻</div>
+        </div>
+        <div class="flip-back">
+          <div style="font-size:13px;font-weight:600;color:#fcd34d;margin-bottom:8px;">Senior Associate, Strategy</div>
+          <div class="flip-quote">"The TOK class at Vista changed how I think about problems. McKinsey noticed that immediately."</div>
+          <span class="badge" style="background:rgba(255,255,255,0.15);color:#fff;margin-top:8px;">IB Diploma · 42/45</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="avatar" style="width:76px;height:76px;font-size:24px;background:linear-gradient(135deg,#16a34a,#0d9488);color:#fff;margin:0 auto 12px;">MK</div>
+          <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:800;color:#1e1b16;margin-bottom:3px;">Meera Krishnan</div>
+          <div style="font-size:10px;color:#8a847d;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;">Batch of 2016</div>
+          <div style="font-size:12px;color:#4338ca;">UN Women · Geneva</div>
+          <div class="flip-hint">hover / tap to flip ↻</div>
+        </div>
+        <div class="flip-back">
+          <div style="font-size:13px;font-weight:600;color:#fcd34d;margin-bottom:8px;">Programme Officer</div>
+          <div class="flip-quote">"Vista's MUN programme sparked a passion that led me all the way to Geneva."</div>
+          <span class="badge" style="background:rgba(255,255,255,0.15);color:#fff;margin-top:8px;">IB Diploma · 41/45</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="avatar" style="width:76px;height:76px;font-size:24px;background:linear-gradient(135deg,#0284c7,#4338ca);color:#fff;margin:0 auto 12px;">AJ</div>
+          <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:800;color:#1e1b16;margin-bottom:3px;">Aryan Joshi</div>
+          <div style="font-size:10px;color:#8a847d;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;">Batch of 2023</div>
+          <div style="font-size:12px;color:#4338ca;">IIT Bombay · CS</div>
+          <div class="flip-hint">hover / tap to flip ↻</div>
+        </div>
+        <div class="flip-back">
+          <div style="font-size:13px;font-weight:600;color:#fcd34d;margin-bottom:8px;">B.Tech, Computer Science</div>
+          <div class="flip-quote">"Vista's competitive math programme gave me a 2-year head start at IIT."</div>
+          <span class="badge" style="background:rgba(255,255,255,0.15);color:#fff;margin-top:8px;">CBSE · 99.2%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card" onclick="this.classList.toggle('flipped')">
+      <div class="flip-inner">
+        <div class="flip-front">
+          <div class="avatar" style="width:76px;height:76px;font-size:24px;background:linear-gradient(135deg,#e11d48,#7c3aed);color:#fff;margin:0 auto 12px;">PS</div>
+          <div style="font-family:'Playfair Display',serif;font-size:15px;font-weight:800;color:#1e1b16;margin-bottom:3px;">Preethi Subramaniam</div>
+          <div style="font-size:10px;color:#8a847d;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;">Batch of 2022</div>
+          <div style="font-size:12px;color:#4338ca;">NID · Ahmedabad</div>
+          <div class="flip-hint">hover / tap to flip ↻</div>
+        </div>
+        <div class="flip-back">
+          <div style="font-size:13px;font-weight:600;color:#fcd34d;margin-bottom:8px;">B.Des, Product Design</div>
+          <div class="flip-quote">"Art class at Vista wasn't just art — it taught me to observe the world differently."</div>
+          <span class="badge" style="background:rgba(255,255,255,0.15);color:#fff;margin-top:8px;">CBSE · 96.2%</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TIMELINE -->
+<section class="section reveal">
+  <p class="sec-label">Our history</p>
+  <h2 class="sec-title">Vista through the years</h2>
+  <div class="tl" style="max-width:640px;">
+    <div class="tl-item"><div class="tl-year">2008</div><div class="tl-col"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-title">Vista International School founded</div><div class="tl-detail">Opened with 120 students on a 4-acre campus in Gachibowli. First batch offered Cambridge IGCSE only.</div></div></div>
+    <div class="tl-item"><div class="tl-year">2011</div><div class="tl-col"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-title">IB Diploma Programme launched</div><div class="tl-detail">Became one of the first schools in Hyderabad to offer the full IB continuum from PYP to DP.</div></div></div>
+    <div class="tl-item"><div class="tl-year">2015</div><div class="tl-col"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-title">Expanded to 1,000 students</div><div class="tl-detail">New sports complex and performing arts centre opened. First alumni batch reached senior leadership roles.</div></div></div>
+    <div class="tl-item"><div class="tl-year">2019</div><div class="tl-col"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-title">Alumni Network formally established</div><div class="tl-detail">Vista Alumni Association launched with 800 members. First annual reunion held on campus.</div></div></div>
+    <div class="tl-item"><div class="tl-year">2024</div><div class="tl-col"><div class="tl-dot"></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-title">Ranked Top 5 International Schools in Hyderabad</div><div class="tl-detail">Recognised by Education World rankings for academic excellence and holistic development.</div></div></div>
+    <div class="tl-item"><div class="tl-year">2026</div><div class="tl-col"><div class="tl-dot" style="background:#d97706;box-shadow:0 0 0 3px #fffbeb;"></div><div class="tl-line"></div></div><div class="tl-content"><div class="tl-title">2,400+ alumni across 38 countries</div><div class="tl-detail">Vista graduates now work at Google, Oxford, AIIMS, McKinsey, ISRO, and lead their own startups.</div></div></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- REUNION CTA -->
+<section class="section reveal">
+  <div style="background:linear-gradient(135deg,#4338ca 0%,#7c3aed 100%);border-radius:28px;padding:clamp(32px,5vw,60px);text-align:center;">
+    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2);border-radius:50px;padding:6px 18px;font-size:11px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.85);margin-bottom:20px;"><div class="eyebrow-dot"></div>June 12, 2026</div>
+    <h2 style="font-family:'Playfair Display',serif;font-size:clamp(26px,5vw,44px);font-weight:900;color:#fff;margin-bottom:14px;">Alumni Reunion 2026</h2>
+    <p style="font-size:14px;color:rgba(255,255,255,0.65);max-width:500px;margin:0 auto 32px;line-height:1.85;">All batches welcome. Come back to campus, walk the halls you grew up in, and reconnect with the people who shaped you. 11:00 AM · Vista Campus, Gachibowli.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a class="btn btn-amber" href="events.html">View Event Details →</a>
+      <a class="btn" style="background:rgba(255,255,255,0.15);color:#fff;border:1px solid rgba(255,255,255,0.25);" href="#">Register Now</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-logo">Vista <em>International</em></div><div class="footer-desc">A premium IB, Cambridge & CBSE school in Gachibowli, Hyderabad. Nurturing global citizens since 2008.</div></div>
+    <div class="footer-col"><div class="footer-col-title">Navigate</div><a href="index.html">Home</a><a href="students.html">Students</a><a href="alumni.html">Alumni</a><a href="news.html">News</a><a href="events.html">Events</a></div>
+    <div class="footer-col"><div class="footer-col-title">School</div><a href="#">Admissions</a><a href="#">Parent Portal</a><a href="#">Curriculum</a></div>
+    <div class="footer-col"><div class="footer-col-title">Contact</div><a href="#">info@vista.edu.in</a><a href="#">+91 40 1234 5678</a><a href="#">Gachibowli, Hyderabad</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Vista International School, Hyderabad.</span><span>The Vista Chronicle · Issue 34</span></div>
+</footer>
+
+<script src="shared.js"></script>
+<script>initFlip('.flip-card');</script>
+</body>
+</html>

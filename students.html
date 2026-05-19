@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Students — The Vista Chronicle</title>
+<link rel="stylesheet" href="shared.css"/>
+<style>
+.students-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:18px;}
+.profile-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;}
+.profile-card{background:#fff;border:1px solid #e5e2db;border-radius:20px;padding:22px;display:flex;gap:18px;align-items:flex-start;box-shadow:0 2px 12px rgba(0,0,0,0.05);transition:transform 0.3s,box-shadow 0.3s;}
+.profile-card:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(0,0,0,0.09);}
+.profile-name{font-family:'Playfair Display',serif;font-size:16px;font-weight:800;color:#1e1b16;margin-bottom:3px;}
+.profile-sub{font-size:11px;color:#8a847d;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px;}
+.profile-bio{font-size:13px;color:#6b6560;line-height:1.65;margin-bottom:12px;}
+.profile-tags{display:flex;flex-wrap:wrap;gap:6px;}
+.lb-row{background:#fff;border:1px solid #e5e2db;border-radius:14px;padding:14px 18px;display:grid;grid-template-columns:44px 1fr auto auto;gap:14px;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.04);transition:box-shadow 0.2s;}
+.lb-row:hover{box-shadow:0 4px 16px rgba(0,0,0,0.08);}
+@media(max-width:480px){.students-grid{grid-template-columns:repeat(2,1fr);}.profile-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Vista <em>International</em></a>
+  <ul class="nav-links">
+    <li><a class="nav-link" href="index.html">Home</a></li>
+    <li><a class="nav-link" href="students.html">Students</a></li>
+    <li><a class="nav-link" href="alumni.html">Alumni</a></li>
+    <li><a class="nav-link" href="news.html">News</a></li>
+    <li><a class="nav-link" href="events.html">Events</a></li>
+  </ul>
+  <span class="nav-issue">Issue 34 · May 2026</span>
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a class="nav-link" href="index.html">🏠 Home</a>
+  <a class="nav-link" href="students.html">🎓 Students</a>
+  <a class="nav-link" href="alumni.html">🌍 Alumni</a>
+  <a class="nav-link" href="news.html">📰 News</a>
+  <a class="nav-link" href="events.html">📅 Events</a>
+</div>
+
+<section class="hero page-hero">
+  <div class="hero-orb ho1"></div><div class="hero-orb ho2"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow"><div class="eyebrow-dot"></div>May 2026 Spotlight</div>
+    <h1 class="hero-title">Our <em>Students</em></h1>
+    <p class="hero-sub">Achievers · Leaders · Changemakers</p>
+  </div>
+</section>
+
+<!-- 3D CARDS -->
+<section class="section reveal">
+  <p class="sec-label">Weekly spotlight</p>
+  <h2 class="sec-title">Faces of Vista this week</h2>
+  <div class="students-grid">
+
+    <div class="card-3d"><div class="card-3d-inner" data-tilt>
+      <div class="avatar online" style="width:72px;height:72px;font-size:22px;background:linear-gradient(135deg,#4338ca,#7c3aed);color:#fff;margin:0 auto 14px;">AR</div>
+      <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:800;color:#1e1b16;margin-bottom:3px;">Aarav Reddy</div>
+      <div style="font-size:10px;color:#8a847d;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:10px;">Grade 11 · IB DP</div>
+      <span class="badge" style="background:#fffbeb;color:#d97706;">🥇 Athletics Gold</span>
+    </div></div>
+
+    <div class="card-3d"><div class="card-3d-inner" data-tilt>
+      <div class="avatar online" style="width:72px;height:72px;font-size:22px;background:linear-gradient(135deg,#e11d48,#7c3aed);color:#fff;margin:0 auto 14px;">SN</div>
+      <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:800;color:#1e1b16;margin-bottom:3px;">Sanya Nair</div>
+      <div style="font-size:10px;color:#8a847d;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:10px;">Grade 9 · IGCSE</div>
+      <span class="badge" style="background:#eef2ff;color:#4338ca;">Science Fair 1st</span>
+    </div></div>
+
+    <div class="card-3d"><div class="card-3d-inner" data-tilt>
+      <div class="avatar online" style="width:72px;height:72px;font-size:22px;background:linear-gradient(135deg,#0d9488,#4338ca);color:#fff;margin:0 auto 14px;">KP</div>
+      <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:800;color:#1e1b16;margin-bottom:3px;">Krish Patel</div>
+      <div style="font-size:10px;color:#8a847d;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:10px;">Grade 12 · IB DP</div>
+      <span class="badge" style="background:#f0fdf4;color:#16a34a;">Model UN Best</span>
+    </div></div>
+
+    <div class="card-3d"><div class="card-3d-inner" data-tilt>
+      <div class="avatar" style="width:72px;height:72px;font-size:22px;background:linear-gradient(135deg,#d97706,#e11d48);color:#fff;margin:0 auto 14px;">DM</div>
+      <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:800;color:#1e1b16;margin-bottom:3px;">Diya Menon</div>
+      <div style="font-size:10px;color:#8a847d;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:10px;">Grade 10 · CBSE</div>
+      <span class="badge" style="background:#fff1f2;color:#e11d48;">Art Showcase</span>
+    </div></div>
+
+    <div class="card-3d"><div class="card-3d-inner" data-tilt>
+      <div class="avatar online" style="width:72px;height:72px;font-size:22px;background:linear-gradient(135deg,#7c3aed,#e11d48);color:#fff;margin:0 auto 14px;">RS</div>
+      <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:800;color:#1e1b16;margin-bottom:3px;">Rohan Singh</div>
+      <div style="font-size:10px;color:#8a847d;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:10px;">Grade 8 · CBSE</div>
+      <span class="badge" style="background:#f5f3ff;color:#7c3aed;">Chess Champion</span>
+    </div></div>
+
+    <div class="card-3d"><div class="card-3d-inner" data-tilt>
+      <div class="avatar online" style="width:72px;height:72px;font-size:22px;background:linear-gradient(135deg,#0284c7,#0d9488);color:#fff;margin:0 auto 14px;">PK</div>
+      <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:800;color:#1e1b16;margin-bottom:3px;">Priya Kumar</div>
+      <div style="font-size:10px;color:#8a847d;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:10px;">Grade 11 · IB DP</div>
+      <span class="badge" style="background:#f0f9ff;color:#0284c7;">Debate Winner</span>
+    </div></div>
+
+    <div class="card-3d"><div class="card-3d-inner" data-tilt>
+      <div class="avatar online" style="width:72px;height:72px;font-size:22px;background:linear-gradient(135deg,#0d9488,#16a34a);color:#fff;margin:0 auto 14px;">AM</div>
+      <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:800;color:#1e1b16;margin-bottom:3px;">Arjun Mehta</div>
+      <div style="font-size:10px;color:#8a847d;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:10px;">Grade 7 · CBSE</div>
+      <span class="badge" style="background:#fffbeb;color:#d97706;">Spelling Bee 1st</span>
+    </div></div>
+
+    <div class="card-3d"><div class="card-3d-inner" data-tilt>
+      <div class="avatar" style="width:72px;height:72px;font-size:22px;background:linear-gradient(135deg,#7c3aed,#4338ca);color:#fff;margin:0 auto 14px;">RV</div>
+      <div style="font-family:'Playfair Display',serif;font-size:14px;font-weight:800;color:#1e1b16;margin-bottom:3px;">Riya Verma</div>
+      <div style="font-size:10px;color:#8a847d;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:10px;">Grade 12 · IB DP</div>
+      <span class="badge" style="background:#eef2ff;color:#4338ca;">MIT Early Admit</span>
+    </div></div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROFILES -->
+<section class="section reveal">
+  <p class="sec-label">In depth</p>
+  <h2 class="sec-title">Student profiles this month</h2>
+  <div class="profile-grid">
+
+    <div class="profile-card">
+      <div class="avatar" style="width:56px;height:56px;font-size:18px;background:linear-gradient(135deg,#4338ca,#7c3aed);color:#fff;">AR</div>
+      <div class="profile-info">
+        <div class="profile-name">Aarav Reddy</div>
+        <div class="profile-sub">Grade 11 · IB DP · House Captain</div>
+        <div class="profile-bio">Gold medallist at inter-school 400m. His IB Extended Essay on sports infrastructure shortlisted for the regional IB Award.</div>
+        <div class="profile-tags"><span class="badge" style="background:#fffbeb;color:#d97706;">Athletics</span><span class="badge" style="background:#eef2ff;color:#4338ca;">Economics EE</span><span class="badge" style="background:#f0fdf4;color:#16a34a;">CAS Leader</span></div>
+      </div>
+    </div>
+
+    <div class="profile-card">
+      <div class="avatar online" style="width:56px;height:56px;font-size:18px;background:linear-gradient(135deg,#e11d48,#7c3aed);color:#fff;">SN</div>
+      <div class="profile-info">
+        <div class="profile-name">Sanya Nair</div>
+        <div class="profile-sub">Grade 9 · IGCSE · Science Club Head</div>
+        <div class="profile-bio">First place at Science Fair for water purification using biochar. Leads the junior robotics club.</div>
+        <div class="profile-tags"><span class="badge" style="background:#eef2ff;color:#4338ca;">Biology</span><span class="badge" style="background:#f5f3ff;color:#7c3aed;">Robotics</span><span class="badge" style="background:#f0fdf4;color:#16a34a;">Environmentalist</span></div>
+      </div>
+    </div>
+
+    <div class="profile-card">
+      <div class="avatar online" style="width:56px;height:56px;font-size:18px;background:linear-gradient(135deg,#0d9488,#4338ca);color:#fff;">KP</div>
+      <div class="profile-info">
+        <div class="profile-name">Krish Patel</div>
+        <div class="profile-sub">Grade 12 · IB DP · Head Boy</div>
+        <div class="profile-bio">Won Best Delegate at HYMUN 2026. Elected Head Boy with a mandate on mental health and sustainability.</div>
+        <div class="profile-tags"><span class="badge" style="background:#f0f9ff;color:#0284c7;">MUN</span><span class="badge" style="background:#f0fdfa;color:#0d9488;">Public Speaking</span><span class="badge" style="background:#fff1f2;color:#e11d48;">Leadership</span></div>
+      </div>
+    </div>
+
+    <div class="profile-card">
+      <div class="avatar" style="width:56px;height:56px;font-size:18px;background:linear-gradient(135deg,#7c3aed,#4338ca);color:#fff;">RV</div>
+      <div class="profile-info">
+        <div class="profile-name">Riya Verma</div>
+        <div class="profile-sub">Grade 12 · IB DP · Valedictorian</div>
+        <div class="profile-bio">MIT early admission for Computer Science. Scored 45/45 in IB — first Vista student to do so in 6 years.</div>
+        <div class="profile-tags"><span class="badge" style="background:#eef2ff;color:#4338ca;">MIT Admit</span><span class="badge" style="background:#fffbeb;color:#d97706;">IB 45/45</span><span class="badge" style="background:#f5f3ff;color:#7c3aed;">Coding</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- LEADERBOARD -->
+<section class="section reveal">
+  <p class="sec-label">Sports</p>
+  <h2 class="sec-title">Inter-school athletics results</h2>
+  <div style="display:flex;flex-direction:column;gap:10px;">
+    <div style="display:grid;grid-template-columns:44px 1fr auto auto;gap:14px;padding:0 18px;font-size:10px;color:#c4bdb5;text-transform:uppercase;letter-spacing:0.1em;">#<span>Student</span><span>Event</span><span>Medal</span></div>
+    <div class="lb-row" style="background:linear-gradient(90deg,#fffbeb,#fff);border-color:#fde68a;">
+      <span style="font-family:'Playfair Display',serif;font-size:20px;font-weight:800;color:#d97706;">1</span>
+      <div style="display:flex;align-items:center;gap:12px;"><div class="avatar" style="width:36px;height:36px;font-size:12px;background:linear-gradient(135deg,#4338ca,#7c3aed);color:#fff;">AR</div><div><div style="font-size:13px;font-weight:600;color:#1e1b16;">Aarav Reddy</div><div style="font-size:11px;color:#8a847d;">Grade 11</div></div></div>
+      <span style="font-size:12px;color:#8a847d;">400m Sprint</span>
+      <span class="badge" style="background:#fffbeb;color:#d97706;">🥇 Gold</span>
+    </div>
+    <div class="lb-row">
+      <span style="font-family:'Playfair Display',serif;font-size:20px;font-weight:800;color:#94a3b8;">2</span>
+      <div style="display:flex;align-items:center;gap:12px;"><div class="avatar" style="width:36px;height:36px;font-size:12px;background:linear-gradient(135deg,#e11d48,#7c3aed);color:#fff;">SN</div><div><div style="font-size:13px;font-weight:600;color:#1e1b16;">Sanya Nair</div><div style="font-size:11px;color:#8a847d;">Grade 9</div></div></div>
+      <span style="font-size:12px;color:#8a847d;">Long Jump</span>
+      <span class="badge" style="background:#f1f5f9;color:#64748b;">🥈 Silver</span>
+    </div>
+    <div class="lb-row">
+      <span style="font-family:'Playfair Display',serif;font-size:20px;font-weight:800;color:#b45309;">3</span>
+      <div style="display:flex;align-items:center;gap:12px;"><div class="avatar" style="width:36px;height:36px;font-size:12px;background:linear-gradient(135deg,#7c3aed,#e11d48);color:#fff;">RS</div><div><div style="font-size:13px;font-weight:600;color:#1e1b16;">Rohan Singh</div><div style="font-size:11px;color:#8a847d;">Grade 8</div></div></div>
+      <span style="font-size:12px;color:#8a847d;">800m Run</span>
+      <span class="badge" style="background:#fff7ed;color:#c2410c;">🥉 Bronze</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div><div class="footer-logo">Vista <em>International</em></div><div class="footer-desc">A premium IB, Cambridge & CBSE school in Gachibowli, Hyderabad. Nurturing global citizens since 2008.</div></div>
+    <div class="footer-col"><div class="footer-col-title">Navigate</div><a href="index.html">Home</a><a href="students.html">Students</a><a href="alumni.html">Alumni</a><a href="news.html">News</a><a href="events.html">Events</a></div>
+    <div class="footer-col"><div class="footer-col-title">School</div><a href="#">Admissions</a><a href="#">Parent Portal</a><a href="#">Curriculum</a><a href="#">Faculty</a></div>
+    <div class="footer-col"><div class="footer-col-title">Contact</div><a href="#">info@vista.edu.in</a><a href="#">+91 40 1234 5678</a><a href="#">Gachibowli, Hyderabad</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Vista International School, Hyderabad.</span><span>The Vista Chronicle · Issue 34</span></div>
+</footer>
+
+<script src="shared.js"></script>
+<script>initTilt('.card-3d');</script>
+</body>
+</html>
